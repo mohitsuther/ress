@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            background: #353958;
+            height: 70px;
+            width: 100vw;
+        }
+
+        .search-box {
+            height: 30px;
+            width: 20vw;
+            margin: 12px 0px 12px 12px;
+            border-radius: 10px;
+            font-size: 16px;
+            padding-left: 15px;
+            margin-left: 20%;
+            align-items: center;
+        }
+
+        .s {
+            font-size: 27px;
+            align-items: center;
+            margin: 14px 10px 10px 10px;
+        }
+
+        .nav-left {
+            width: 50vw;
+            height: 10vh;
+            display: flex;
+            padding-top: 6px;
+        }
+
+        .nav-right {
+            width: 50vw;
+            height: 10vh;
+            display: flex;
+            justify-content: right;
+        }
+
+        .n-r {
+            font-size: 20px;
+            color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 20px;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .n-r:hover {
+            color: rgb(138, 59, 59);
+            transition: 0.7s;
+        }
+
+        #n-4 {
+            padding-right: 4vh;
+        }
+
+        .main-1 {
+
+            width: 100%;
+            display: inline-block;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            display: flex;
+            background-color: rgba(201, 210, 254, 0.214);
+            border-bottom: 4px solid rgb(235, 202, 160);
+        }
+
+        .main-left {
+            text-align: center;
+            width: 38vw;
+            box-sizing: border-box;
+            flex-wrap: wrap;
+            position: relative;
+            margin: auto;
+        }
+
+        .main-right {
+            box-sizing: border-box;
+            min-width: 20vw;
+
+            position: relative;
+        }
+
+
+        .img-1 {
+            max-width: 650px;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        #m-t-1 {
+            font-size: 70px;
+            font-weight: 700;
+            text-align: left;
+            display: grid;
+            padding: 0px 0px 20px 0%;
+            width: 35vw;
+
+
+        }
+
+        #m-t-2 {
+            font-size: 30px;
+            font-weight: 100;
+            text-align: left;
+            width: 40vw;
+            display: grid;
+        }
+
+        .login-1 {
+            height: 45px;
+            width: 150px;
+            background-color: rgb(49, 41, 41);
+            border-radius: 10px;
+            color: #ffffff;
+            font-size: 20px;
+            justify-content: left;
+            margin-right: 77%;
+            margin-top: 20px;
+        }
+
+        .login-1:hover {
+            background-color: rgb(108, 105, 105);
+            color: #fefefe;
+
+            box-shadow: 2px 4px 8px 2px rgb(108, 100, 100);
+        }
+
+        .butte {
+            height: 10vh;
+            width: 100%;
+            background-color: rgba(201, 210, 254, 0.214);
+        }
+
+        #butt {
+            display: flex;
+            right: 0%;
+            padding-left: 95%;
+            padding-top: 10px;
+            font-size: 3rem;
+
+        }
+
+        .dives {
+
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0;
+            justify-content: space-between;
+            border-bottom: 4px solid rgb(235, 202, 160);
+        }
+
+        .container1 {
+            height: 400px;
+            width: 400px;
+            background-color: #DDE4F8;
+            margin: 4vw;
+            text-align: center;
+            justify-content: center;
+            box-shadow: 0px 4px 10px 4px rgb(174, 179, 253);
+        }
+
+        .container2 {
+            height: 400px;
+            width: 400px;
+            background-color: aquamarine;
+            margin: 4vw;
+            text-align: center;
+            background-color: #DDEAF8;
+            justify-content: center;
+            box-shadow: 0px 4px 10px 4px rgb(195, 173, 240);
+        }
+
+        .container3 {
+            height: 400px;
+            width: 400px;
+            background-color: aquamarine;
+            margin: 4vw;
+            text-align: center;
+            background-color: #F0DDFF;
+            justify-content: center;
+            box-shadow: 0px 4px 10px 4px rgb(157, 192, 240);
+        }
+
+        .container4 {
+            height: 400px;
+            width: 400px;
+            background-color: aquamarine;
+            margin: 4vw;
+            text-align: center;
+            background-color: #DDEAF8;
+            justify-content: center;
+            box-shadow: 0px 4px 10px 4px rgb(154, 174, 247);
+        }
+
+        .container5 {
+            height: 400px;
+            width: 400px;
+            background-color: aquamarine;
+            margin: 4vw;
+            text-align: center;
+            background-color: #DDE4F8;
+            justify-content: center;
+            box-shadow: 0px 4px 10px 4px rgb(157, 191, 233);
+        }
+
+        .container6 {
+            height: 400px;
+            width: 400px;
+            background-color: aquamarine;
+            margin: 4vw;
+            text-align: center;
+            background-color: #DDE4F8;
+            justify-content: center;
+            box-shadow: 0px 4px 10px 4px rgb(189, 170, 228);
+        }
+
+        .under {
+            margin: auto;
+            align-items: center;
+            position: relative;
+            text-align: center;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        #photos {
+            height: 40%;
+            width: 60%;
+            padding: 20px;
+        }
+
+        #text-div {
+            margin: auto;
+            text-align: center;
+            font-size: 1.2rem;
+        }
+
+        .contact-us {
+            text-align: center;
+            justify-content: center;
+            position: relative;
+            margin: 0;
+        }
+
+        #contact {
+            font-size: 4rem;
+            font-weight: 800;
+            margin: auto;
+        }
+
+        #texto {
+            height: 6vh;
+            width: 60vw;
+            border: 2px solid black;
+            margin: 4px;
+            font-size: 16px;
+            padding-left: 10px;
+        }
+
+        #texto-2 {
+            height: 30vh;
+            width: 60vw;
+            border: 2px solid black;
+            font-size: 16px;
+            padding-left: 10px;
+            margin: 4px;
+        }
+
+
+        #submit {
+            height: 4vh;
+            width: 10vw;
+            margin: 10px;
+            border: 2px solid black;
+            border-radius: 6px;
+            background-color: rgb(124, 170, 235);
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #submit:hover {
+            background-color: #496ac5;
+            color: #ffffff;
+        }
+
+        @media screen and (max-width:650px) {
+            .main-1 {
+                width: 600px;
+            }
+
+            .login-1 {
+                height: 76px;
+                width: 187px;
+                font-size: 27px;
+            }
+
+            #submit {
+                font-size: 27px;
+                height: 7vh;
+                width: 33vw;
+            }
+
+            .navbar {
+                width: 6800px;
+            }
+
+            .s {
+                font-size: 45px;
+            }
+
+
+            .nav-left {
+                width: 88vw;
+            }
+
+            .butte {
+                width: 160vw;
+                height: 100px;
+                font-size: 40px;
+
+            }
+
+            #butt {
+                font-size: 70px;
+                margin-right: 90px;
+                padding-left: 84%;
+            }
+
+            .n-r {
+                font-size: 30px;
+                align-items: center;
+                padding: 20px;
+                margin: 0;
+            }
+
+            .main-right {
+                position: relative;
+                margin: auto;
+            }
+
+            .main-left {
+                margin: 0px 0px 0px 16%;
+                width: 75vw;
+            }
+
+            #m-t-1 {
+                width: 100vw;
+                font-size: 6rem
+            }
+
+            .dives {
+                justify-content: center;
+                width: 160vw;
+            }
+
+            #m-t-2 {
+                width: 100vw;
+                font-size: 3rem;
+            }
+
+            .main-1 {
+                width: 160vw;
+                min-height: 50vh;
+
+            }
+
+            #text-div {
+                font-size: 2.4rem;
+                text-align: left;
+            }
+
+            .navbar {
+                width: 160vw;
+                height: 100px;
+            }
+
+            .img-1 {
+                position: relative;
+            }
+
+            .search-box {
+
+                height: 50px;
+                width: 300px;
+                font-size: 34px;
+            }
+
+            .container1 {
+                height: 635px;
+                width: 600px;
+            }
+
+            .container2 {
+                height: 635px;
+                width: 600px;
+            }
+
+            .container3 {
+                height: 635px;
+                width: 600px;
+            }
+
+            .container4 {
+                height: 685px;
+                width: 600px;
+
+            }
+
+            .container5 {
+                height: 635px;
+                width: 600px;
+            }
+
+            .container6 {
+                height: 635px;
+                width: 600px;
+            }
+
+            #photo {
+                width: 74%;
+            }
+
+            .contact-us {
+                width: 160vw;
+
+            }
+
+            #texto {
+                font-size: 20px;
+                height: 8vh;
+                width: 132vw;
+                margin: 12px;
+            }
+
+            #texto-2 {
+                font-size: 20px;
+                height: 28vh;
+                width: 132vw;
+            }
+
+            #submiy {
+                font-size: 25px;
+            }
+
+        }
+
+        @media (min-width: 650px) and (max-width: 1126px) {
+
+            .nav-left {
+                width: 88vw;
+            }
+
+            .butte {
+                width: 160vw;
+                height: 100px;
+                font-size: 40px;
+
+            }
+
+            #butt {
+                font-size: 70px;
+                margin-right: 90px;
+            }
+
+            .n-r {
+                font-size: 30px;
+                align-items: center;
+                padding: 20px;
+                margin: 0;
+            }
+
+            .main-right {
+                position: relative;
+                margin: auto;
+            }
+
+            .main-left {
+                margin: 0px 0px 0px 16%;
+                width: 75vw;
+            }
+
+            #m-t-1 {
+                width: 100vw;
+                font-size: 6rem
+            }
+
+            .dives {
+                justify-content: center;
+                width: 160vw;
+            }
+
+            #m-t-2 {
+                width: 100vw;
+                font-size: 3rem;
+            }
+
+            .main-1 {
+                width: 160vw;
+                min-height: 50vh;
+
+            }
+
+            #text-div {
+                font-size: 1.4rem;
+            }
+
+            .navbar {
+                width: 160vw;
+                height: 100px;
+            }
+
+            .img-1 {
+                position: relative;
+            }
+
+            .search-box {
+                height: 50px;
+                width: 300px;
+                font-size: 25px;
+            }
+
+            .container1 {
+                height: 435px;
+                width: 448px;
+            }
+
+            .container2 {
+                height: 435px;
+                width: 448px;
+            }
+
+            .container3 {
+                height: 435px;
+                width: 448px;
+            }
+
+            .container4 {
+                height: 435px;
+                width: 448px;
+            }
+
+            .container5 {
+                height: 435px;
+                width: 448px;
+            }
+
+            .container6 {
+                height: 435px;
+                width: 448px;
+            }
+
+            #photo {
+                width: 64%;
+            }
+
+            .contact-us {
+                width: 160vw;
+
+            }
+
+            #texto {
+                font-size: 20px;
+            }
+
+            #texto-2 {
+                font-size: 20px;
+            }
+
+            #submiy {
+                font-size: 25px;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="nav-left">
+                <input class="search-box" type="text" placeholder="Search" required>
+                <div class="s"> <i class="fa-solid fa-magnifying-glass" id="search" style="color: #fffdfd;"></i>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="n-r" id="n-1">Home</div>
+                <div class="n-r" id="n-2">Service</div>
+                <div class="n-r" id="n-3">Contact</div>
+                <div class="n-r" id="n-4">About</div>
+            </div>
+        </nav>
+        <div class="butte">
+            <i id="butt" class="fa-solid fa-toggle-on"></i>
+        </div>
+        <div class="main-1">
+            <div class="main-left">
+                <a id="m-t-1">What is Design ?</a>
+                <a id="m-t-2">Design is a discipline of study and practice focused on the interaction between a person —
+                    a ‘user’— and the man-made environment, taking into account aesthetic, functional, contextual,
+                    cultural and societal considerations. As a formalised discipline, design is a modern construct.</a>
+
+                <button class="login-1">Login</button>
+            </div>
+            <div class="main-right">
+                <img class="img-1" alt="photo"
+                    src="https://sbanimation.com/wp-content/uploads/2020/02/animated-storytelling-with-ai-1024x683.png">
+            </div>
+        </div>
+        <div class="dives">
+            <div class="container1">
+                <div class="under"> <img alt="photo" id="photos"
+                        src="https://cdn.mos.cms.futurecdn.net/CT9xCjqrhnPD4ivB6B8Hqe-1200-80.jpg">
+                    <br><a id="text-div">With Mailchimp's landing page builder, it takes just a few minutes to design
+                        beautiful landing pages that make visitors want to join your audience or buy your stuff.</a>
+                </div>
+            </div>
+            <div class="container2">
+                <div class="under">
+                    <img id="photos"
+                        src="https://th.bing.com/th/id/OIP.y3jYq-sTQL8EhExxDJl2GAHaFj?pid=ImgDet&w=195&h=146&c=7&dpr=1.1"
+                        alt="photo">
+                    <br><a id="text-div">AI web design is the design of a website with artificial intelligence
+                        technology.
+                        By using an advanced algorithm, AI web design tools can provide your business with a variety of
+                        options.</a>
+                </div>
+            </div>
+            <div class="container3">
+                <div class="under"><img id="photos"
+                        src="https://cdn.dribbble.com/users/11919399/screenshots/18348235/media/7d73e56600e733a4e10c1173d313dfce.png?compress=1&resize=400x300&vertical=top"
+                        alt="photo">
+                    <br><a id="text-div">Carefully created themes help make your content stand out. Sites intelligently
+                        optimises your work so that it looks great on desktop, tablet and mobile.</a>
+                </div>
+            </div>
+            <div class="container4">
+                <div class="under"><img id="photos"
+                        src="https://th.bing.com/th/id/OIP.UC8TvjL6sIeViDzxw_av9QHaFj?pid=ImgDet&rs=1" alt="photo">
+                    <br><a id="text-div">AI web design is the design of a website with artificial intelligence
+                        technology.
+                        By using an advanced algorithm, AI web design tools can provide your business with a variety of
+                        options when it comes to designing every page of your website.</a>
+                </div>
+            </div>
+            <div class="container5">
+                <div class="under"><img id="photos"
+                        src="https://i0.wp.com/www.theedigital.com/wp-content/uploads/2020/07/Latest-Web-Design-Trends-and-Standards.jpg"
+                        alt="photo">
+                    <br><a id="text-div">Creation and editing is extremely simple: just click, drag or drop. The design
+                        will
+                        be rearranged automatically with a grid layout. Everything fits into the best place, and is
+                        simple to move, resize or rearrange.</a>
+                </div>
+            </div>
+            <div class="container6">
+                <div class="under"> <img id="photos"
+                        src="https://digitalcraftstudios.com/wp-content/uploads/2020/09/Website-Design.jpg" alt="photo">
+                    <br><a id="text-div">Start with a custom domain and get your business online now. Bring your free
+                        website and landing pages under one domain to keep your brand in harmony.</a>
+                </div>
+            </div>
+        </div>
+        <div class="contact-us">
+            <a id="contact">Contact Us</a>
+            <div class="texto-1">
+                <input id="texto" type="text" placeholder="First Name" required>
+            </div>
+            <div class="texto-1">
+                <input id="texto" type="text" placeholder="Last Name" required>
+            </div>
+            <div class="texto-1">
+                <input id="texto" type="email" placeholder="Email" required>
+            </div>
+            <div class="texto-1">
+                <input id="texto-2" type="text" placeholder="Text" required>
+
+            </div>
+            <div class="submit"><button id="submit">Submit</button></div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
